@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="shortUrlApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL SHORTNER</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+    <script src="app.js"></script>
+</head>
+<body class="center">
+    <header>
+        <h3>URL SHORTNER MICROSERVICE</h3>
+        <h4><a href="" target="_blank"></a>fcc pjx</h4>
+        <h5>technologies : node, express, mongodb, mongoose, js, html, css,bootstrap</h5>
+    </header>
+    <section ng-controller="shortAppCtrl" >
+        {{urlToShorten}}
+        <input type="" placeholder="Enter url" ng-model="urlToShorten">
+        <a href="" class="btn btn-primary" ng-href="/new/{{urlToShorten}}">get short url</a>
+    </section>
+</body>
+</html>
