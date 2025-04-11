@@ -116,7 +116,7 @@ app.use(cors());
 app.use(express.static(__dirname + '/public'));
 
 // connect to database 
-// mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shortUrls', {
+ //mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/shortUrls', {
 //     useNewUrlParser: true,
 //     useUnifiedTopology: true
 // });
@@ -152,7 +152,7 @@ run().catch(console.dir);
 
 
 // Create the database entry
-app.get('/new/:urlToShorten', async (req, res) => {
+app.post('/new/:urlToShorten', async (req, res) => {
     let { urlToShorten } = req.params;
 
     // regex for URL validation
