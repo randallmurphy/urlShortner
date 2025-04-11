@@ -152,7 +152,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 // Create the database entry
-app.post('/new/:urlToShorten', async (req, res) => {
+app.get('/new/:urlToShorten', async (req, res) => {
     let { urlToShorten } = req.params;
 
     // regex for URL validation
